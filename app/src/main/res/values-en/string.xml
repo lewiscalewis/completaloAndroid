@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <string name="app_name">CompleteIt_Levi</string>
+
+    <string name="About">About</string>
+
+    <string name="HowTo">How To</string>
+
+    <string name="tramas">Plots</string>
+
+    <string name="filas">Rows</string>
+
+    <string name="columnas">Columns</string>
+
+    <string name="colores">Colors</string>
+
+    <string name="numeros">Numbers</string>
+
+    <string name="vibracion">Vibration</string>
+
+    <string name="sonido">Sound</string>
+
+    <string name="play">Let\'s play!</string>
+
+    <string name="player">Settings</string>
+
+</resources>

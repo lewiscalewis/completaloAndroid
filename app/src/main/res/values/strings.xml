@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Completalo_levi</string>
+    <string name="About">Acerca de</string>
+    <string name="HowTo">Ayuda</string>
+    <string name="tramas">Tramas</string>
+    <string name="filas">Filas</string>
+    <string name="columnas">Columnas</string>
+    <string name="colores">Colores</string>
+    <string name="numeros">Números</string>
+    <string name="vibracion">Vibración</string>
+    <string name="sonido">Sonido</string>
+    <string name="play">A jugar!</string>
+    <string name="player">Configuración</string>
+</resources>
