@@ -1,4 +1,4 @@
-package com.example.completalo_levi
+package org.iesmurgi.completalo_levi
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

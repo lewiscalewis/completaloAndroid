@@ -1,4 +1,4 @@
-package com.example.completalo_levi
+package org.iesmurgi.completalo_levi
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.example.completalo_levi
+package org.iesmurgi.completalo_levi
 
 import android.content.Context
 import android.content.Intent
@@ -9,18 +9,30 @@ import android.os.Bundle
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.util.DisplayMetrics
-import android.view.View
 import android.widget.Chronometer
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.annotation.RequiresApi
+import com.example.completalo_levi.R
 import java.util.*
-import kotlin.collections.ArrayList
 
 open class GameField_levi : AppCompatActivity() {
     
-    private val colores = arrayOf(R.drawable.ic_1c, R.drawable.ic_2c, R.drawable.ic_3c, R.drawable.ic_4c, R.drawable.ic_5c, R.drawable.ic_6c)
-    private val numeros = arrayOf(R.drawable.ic_1n, R.drawable.ic_2n, R.drawable.ic_3n, R.drawable.ic_4n, R.drawable.ic_5n, R.drawable.ic_6n)
+    private val colores = arrayOf(
+        R.drawable.ic_1c,
+        R.drawable.ic_2c,
+        R.drawable.ic_3c,
+        R.drawable.ic_4c,
+        R.drawable.ic_5c,
+        R.drawable.ic_6c
+    )
+    private val numeros = arrayOf(
+        R.drawable.ic_1n,
+        R.drawable.ic_2n,
+        R.drawable.ic_3n,
+        R.drawable.ic_4n,
+        R.drawable.ic_5n,
+        R.drawable.ic_6n
+    )
     
     private lateinit var dibujo: Array<Int>
     private var topTileX: Int = 0
@@ -92,16 +104,12 @@ open class GameField_levi : AppCompatActivity() {
 
 
 
-        alturaMarcador = dpToPx(175)
+        alturaMarcador = dpToPx(200)
 
         dm = resources.displayMetrics
 
-        var virtualY = topTileY
-        if(topTileY == 0){
-            virtualY = 1
-        }
 
-        altura = (dm.heightPixels - alturaMarcador) / virtualY
+        altura = (dm.heightPixels - alturaMarcador) / topTileY
 
         for (i in 0 until topTileY!!){
             secundaryLayout = LinearLayout(this)
@@ -143,23 +151,25 @@ open class GameField_levi : AppCompatActivity() {
         changeView(x, y)
 
         if(x == 0 && y == 0){
+            changeView(0, 1)
+            changeView(1, 0)
+            changeView(1, 1)
+        }
+        else if(x == 0 && y == topTileY - 1){
+            changeView(0,topTileY-2)
+            changeView(1,topTileY-2)
+            changeView(1,topTileY-1)
 
         }
-        else if(x == 0 && y == topTileY!! - 1){
-            changeView(0,topTileY!!-2)
-            changeView(1,topTileY!!-2)
-            changeView(1,topTileY!!-1)
-
+        else if(x == topTileX - 1 && y == 0){
+            changeView(topTileX-2,0)
+            changeView(topTileX-2,1)
+            changeView(topTileX-1,1)
         }
-        else if(x == topTileX!! - 1 && y == 0){
-            changeView(topTileX!!-2,0)
-            changeView(topTileX!!-2,1)
-            changeView(topTileX!!-1,1)
-        }
-        else if(x == topTileX!! - 1 && y == topTileY!! - 1 ){
-            changeView(topTileX!!-2,topTileY!!-1)
-            changeView(topTileX!!-2,topTileY!!-2)
-            changeView(topTileX!!-1,topTileY!!-2)
+        else if(x == topTileX - 1 && y == topTileY - 1 ){
+            changeView(topTileX-2,topTileY-1)
+            changeView(topTileX-2,topTileY-2)
+            changeView(topTileX-1,topTileY-2)
         }
 
         else if(x == 0){
@@ -172,12 +182,12 @@ open class GameField_levi : AppCompatActivity() {
             changeView(x+1,y)
             changeView(x,y+1)
         }
-        else if(x == topTileX!! - 1){
+        else if(x == topTileX - 1){
             changeView(x,y-1)
             changeView(x,y+1)
             changeView(x-1,y)
         }
-        else if(y == topTileY!! - 1){
+        else if(y == topTileY - 1){
             changeView(x-1,y)
             changeView(x+1,y)
             changeView(x,y-1)
@@ -198,7 +208,7 @@ open class GameField_levi : AppCompatActivity() {
     private fun changeView(x: Int, y: Int) {
         val celda = findViewById<CeldaView_levi>(ids[x][y])
 
-        val newIndex = celda.getNewIndex()
+        var newIndex: Int = celda.getNewIndex()
         values[x][y] = newIndex
 
         celda.setBackgroundResource(dibujo[newIndex])

@@ -1,4 +1,4 @@
-package com.example.completalo_levi
+package org.iesmurgi.completalo_levi
 
 import android.content.Intent
 import android.os.Build
@@ -8,6 +8,7 @@ import android.view.Menu
 import android.widget.*
 import android.view.MenuItem
 import androidx.annotation.RequiresApi
+import com.example.completalo_levi.R
 
 
 class MainActivity_levi : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
@@ -34,7 +35,7 @@ class MainActivity_levi : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
         tramas.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                textoTramas!!.text = progress.toString()
+                textoTramas.text = progress.toString()
                 updateColores(progress)
             }
 
@@ -50,7 +51,7 @@ class MainActivity_levi : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
         filas.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                textoFilas!!.text = progress.toString()
+                textoFilas.text = progress.toString()
                 updateXTiles(progress)
             }
 
@@ -66,7 +67,7 @@ class MainActivity_levi : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
         columnas.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                textoColumnas!!.text = progress.toString()
+                textoColumnas.text = progress.toString()
                 updateYTiles(progress)
             }
 

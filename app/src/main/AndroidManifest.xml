@@ -12,21 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Completalo_levi">
         <activity
-            android:name=".Winner"
+            android:name="org.iesmurgi.completalo_levi.Winner"
             android:exported="false" />
         <activity
-            android:name=".GameField_levi"
+            android:name="org.iesmurgi.completalo_levi.GameField_levi"
             android:exported="false" />
         <activity
-            android:name=".About_levi"
+            android:name="org.iesmurgi.completalo_levi.About_levi"
             android:exported="false"
             android:label="@string/About" />
         <activity
-            android:name=".HowTo_levi"
+            android:name="org.iesmurgi.completalo_levi.HowTo_levi"
             android:exported="false"
             android:label="@string/HowTo" />
         <activity
-            android:name=".MainActivity_levi"
+            android:name="org.iesmurgi.completalo_levi.MainActivity_levi"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

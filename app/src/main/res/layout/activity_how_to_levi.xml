@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HowTo_levi">
+    tools:context="org.iesmurgi.completalo_levi.HowTo_levi">
 
     <TextView
         android:id="@+id/textView"

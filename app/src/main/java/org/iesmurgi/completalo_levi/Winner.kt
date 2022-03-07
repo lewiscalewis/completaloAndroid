@@ -1,8 +1,9 @@
-package com.example.completalo_levi
+package org.iesmurgi.completalo_levi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.completalo_levi.R
 
 class Winner : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

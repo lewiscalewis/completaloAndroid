@@ -1,11 +1,8 @@
-package com.example.completalo_levi
+package org.iesmurgi.completalo_levi
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.DialogInterface
-import android.view.View
 import android.widget.Button
-import android.widget.LinearLayout
 
 @SuppressLint("AppCompatCustomView")
 class CeldaView_levi(context: Context,  x: Int,  y: Int,  topElementos: Int,  index: Int,  background: Int):
