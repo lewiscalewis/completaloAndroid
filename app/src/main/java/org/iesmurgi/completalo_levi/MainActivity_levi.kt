@@ -102,6 +102,16 @@ class MainActivity_levi : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         }else{
             choice = "colors"
         }
+        
+        if(textoColumnas.text.toString() == "Columns" || textoColumnas.text.toString() == "Columnas" || textoColumnas.text.toString().toInt() < 3){
+            textoColumnas.text = "3";
+        }
+        if(textoFilas.text.toString() == "Rows" || textoFilas.text.toString() == "Filas" || textoFilas.text.toString().toInt() < 3){
+            textoFilas.text = "3";
+        }
+        if(textoTramas.text.toString() == "Plots" || textoTramas.text.toString() == "Tramas" || textoTramas.text.toString().toInt() < 2){
+            textoTramas.text = "2";
+        }
 
         enviar.putExtra("tramas", textoTramas?.text.toString().toInt())
         enviar.putExtra("filas", textoFilas?.text.toString().toInt())

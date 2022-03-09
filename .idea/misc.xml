@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/lewis/AndroidStudioProjects/completalo_levi/app/src/main/res/drawable/ic_launcher_background.xml" value="0.29907407407407405" />
+        <entry key="..\:/Users/lewis/AndroidStudioProjects/completalo_levi/app/src/main/res/layout-land/celdaview_levi.xml" value="0.4695767195767196" />
+        <entry key="..\:/Users/lewis/AndroidStudioProjects/completalo_levi/app/src/main/res/layout-sw600dp/celdaview_levi.xml" value="0.3818306010928962" />
         <entry key="..\:/Users/lewis/AndroidStudioProjects/completalo_levi/app/src/main/res/layout-v26/activity_main_levi.xml" value="0.2692502532928065" />
         <entry key="..\:/Users/lewis/AndroidStudioProjects/completalo_levi/app/src/main/res/layout/activity_game_field.xml" value="0.1590678824721378" />
         <entry key="..\:/Users/lewis/AndroidStudioProjects/completalo_levi/app/src/main/res/layout/activity_main_levi (1).xml" value="0.2674772036474164" />

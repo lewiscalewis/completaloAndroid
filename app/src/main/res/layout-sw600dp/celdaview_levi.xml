@@ -21,24 +21,23 @@
         android:id="@+id/recuentoClicks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.921" />
 
     <LinearLayout
         android:id="@+id/tablero"
-        android:layout_width="1153dp"
-        android:layout_height="1591dp"
+        android:layout_width="851dp"
+        android:layout_height="1418dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021"></LinearLayout>
+        app:layout_constraintVertical_bias="0.217"></LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
